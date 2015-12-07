@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Made by DiDA for iOSGods.com! - Version 1.0 - Visit https://github.com/iOSGods/Auto-Lipo-for-iOS-5-to-iOS-9-Binary-Only/ for an up-to-date version!
+
+
 #################################################################################
 
 iosgods_binary="/var/mobile/Documents/Binary/BINARYNAME"
@@ -7,6 +10,7 @@ iosgods_target_directory_ios8_or_higher="/var/mobile/Containers/Bundle/Applicati
 iosgods_target_directory_ios7_or_lower="/var/mobile/Applications/*/APPNAME.app/"
 
 #################################################################################
+
 
 set -e
 
