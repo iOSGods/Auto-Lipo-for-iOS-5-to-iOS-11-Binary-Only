@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Made by DiDA for iOSGods.com! - Version 1.0 - Visit https://github.com/iOSGods/Auto-Lipo-for-iOS-5-to-iOS-9-Binary-Only/ for an up-to-date version!
+# Made by DiDA for iOSGods.com! - Version 1.1 - Visit https://github.com/iOSGods/Auto-Lipo-for-iOS-5-to-iOS-9-Binary-Only/ for an up-to-date version!
 
 
 #################################################################################
@@ -72,9 +72,9 @@ case "${1}" in
                 ;;
 
             8*|9*|10*) # If iOS 8, 9 and higher is detected
-                printf "****************************\\n"
-                printf "* iOS 8+ has been detected. *\\n"
-                printf "****************************\\n\\n"
+                printf "****************************************\\n"
+                printf "* iOS 8.0 or higher has been detected. *\\n"
+                printf "****************************************\\n\\n"
 
                 iosgods_target_directory="${iosgods_target_directory_ios8_or_higher}"
                 ig_mv_perms
