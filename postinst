@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Made by DiDA for iOSGods.com! - Version 1.1 - Visit https://github.com/iOSGods/Auto-Lipo-for-iOS-5-to-iOS-9-Binary-Only/ for an up-to-date version!
+# Made for iOSGods.com! - Version 2.0 - Visit https://github.com/iOSGods/Auto-Lipo-for-iOS-5-to-iOS-9-Binary-Only/ for an up-to-date version!
 
 
 #################################################################################
@@ -71,14 +71,26 @@ case "${1}" in
 
                 ;;
 
-            8*|9*|10*) # If iOS 8, 9 and higher is detected
-                printf "****************************************\\n"
+           8*|9.0*|9.1*|9.2*) # If iOS 9.0.x, 9.1, 9.2.x is detected, apply the thinned binary
+		printf "****************************************\\n"
                 printf "* iOS 8.0 or higher has been detected. *\\n"
                 printf "****************************************\\n\\n"
 
                 iosgods_target_directory="${iosgods_target_directory_ios8_or_higher}"
                 ig_mv_perms
-
+                
+                ;;
+				
+	9*|10*) # If iOS 9.3 and higher is detected, apply the thinned binary to the new app location
+		printf "****************************************\\n"
+		printf "* iOS 9.3 or higher has been detected. *\\n"
+		printf "****************************************\\n\\n"
+		
+		# Temporary workaround for iOS 9.3 and higher
+		ln -s -f /var/containers/Bundle /var/mobile/Containers || :
+		iosgods_target_directory="${iosgods_target_directory_ios8_or_higher}"
+		ig_mv_perms
+		
                 ;;
         esac
         ;;
