@@ -72,7 +72,7 @@ case "${1}" in
 
                 ;;
 
-           8*|9.0*|9.1*|9.2*) # If iOS 9.0.x, 9.1, 9.2.x is detected, apply the binary
+           8*|9.0*|9.1*|9.2*) # If iOS 8, 9.0.x, 9.1, 9.2.x is detected, apply the binary
 		printf "****************************************\\n"
                 printf "* iOS 8.x - 9.2.x has been detected. *\\n"
                 printf "****************************************\\n\\n"
