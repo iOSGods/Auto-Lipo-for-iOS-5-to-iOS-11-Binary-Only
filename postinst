@@ -5,7 +5,7 @@
 
 #################################################################################
 
-iosgods_binary="/var/mobile/Documents/Binary/APPNAME"
+iosgods_binary="/var/mobile/Documents/Binary/BINARYNAME"
 iosgods_target_directory_ios9_or_higher="/var/containers/Bundle/Application/*/APPNAME.app/"
 iosgods_target_directory_ios8_to_ios92x="/var/mobile/Containers/Bundle/Application/*/APPNAME.app/"
 iosgods_target_directory_ios7_or_lower="/var/mobile/Applications/*/APPNAME.app/"
